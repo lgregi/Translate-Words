@@ -1,0 +1,51 @@
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+
+
+<body>
+    <app-topo></app-topo>
+    <div *ngIf="JogoEmAndamento; else fimDeJogo">
+
+        <app-painel (encerrarJogo)="encerrarJogo($event)"></app-painel>
+</div>
+<ng-template #fimDeJogo>
+    <div *ngIf="tipoencerramento ==='derrota'; else FimdejogoVitoria" class="container" style="margin: top 50px;">
+        <div class="row">
+            <div class="col">
+                <h3 style= "color: rgb(248, 27, 27);"> Fim de Jogo, infelizmente você perdeu</h3>
+                <p></p>
+                <img *ngFor="let lucas of Lucas"[src] = "lucas.ExibeLucas()"/>
+                <p></p>
+                <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+   
+</ng-template>
+
+<ng-template #FimdejogoVitoria>
+    <div  class="container" style="margin: top 50px;">
+        <div class="row">
+            <div class="col">
+                <h3 style= "color: rgb(5, 218, 115);"> Fim de Jogo, parabéns você ganhou</h3>
+                
+                <p></p>
+                <img *ngFor="let lucas of Lucas"[src] = "lucas.ExibeLucas()"/>
+                <p></p>
+                <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+   
+</ng-template>

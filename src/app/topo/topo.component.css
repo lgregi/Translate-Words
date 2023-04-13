@@ -1,0 +1,13 @@
+.navbar {
+    background: #1CB0F6;
+   
+    padding:  20px;
+    text-align: right;
+    
+   
+
+}
+.navbar-brand{
+    left: 50%;
+    right: 50%;
+}

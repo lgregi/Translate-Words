@@ -1,0 +1,23 @@
+.jumbotron{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    background-color:rgb(200, 197, 197);
+    box-shadow: #99CE28;
+}
+.form-control{
+    margin-top: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.col{
+    margin-left: 10px;
+}
+.teste{
+    margin-right: 20px;
+}
+.teste2{
+    margin-left: 15px;
+    color: black;
+}
