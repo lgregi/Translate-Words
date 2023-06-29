@@ -1,6 +1,6 @@
 
 
-<div class="container">
+<div class="container" (ngSubmit)="verificaresposta()">
     <div class="jumbotron">
         <div class="row">
             <div class="col-sm-6">
@@ -32,7 +32,7 @@
             <div class="col">
                 <p></p>
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary" (click)="verificaresposta()">Verificar</button>
+                    <button type="submit" class="btn btn-primary" (click)="verificaresposta()">Verificar</button>
                 </div>
                 
                 

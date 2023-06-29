@@ -7,7 +7,10 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * *<img *ngFor="let lucas of Lucas"[src] = "lucas.ExibeLucas()"/>
+    img *ngFor="let lucas of Lucas"[src] = "lucas.ExibeLucas()"/>
+    
+    * * * * * * * * * * * * * * * -->
 
 
 
@@ -25,7 +28,7 @@
             <div class="col">
                 <h3 style= "color: rgb(248, 27, 27);"> Fim de Jogo, infelizmente você perdeu</h3>
                 <p></p>
-                <img *ngFor="let lucas of Lucas"[src] = "lucas.ExibeLucas()"/>
+                
                 <p></p>
                 <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
             </div>
@@ -41,7 +44,7 @@
                 <h3 style= "color: rgb(5, 218, 115);"> Fim de Jogo, parabéns você ganhou</h3>
                 
                 <p></p>
-                <img *ngFor="let lucas of Lucas"[src] = "lucas.ExibeLucas()"/>
+                <
                 <p></p>
                 <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar Novamente</button>
             </div>

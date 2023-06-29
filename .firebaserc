@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "translateword-11ebd",
+    "translate": "translateword-11ebd"
+  },
+  "targets": {},
+  "etags": {}
+}
