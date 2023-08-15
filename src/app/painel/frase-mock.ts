@@ -1,9 +1,8 @@
 import { Frase } from "../Sharerd/frase.model";
 // aqui foi recebida a classe criada na pasta share e atribuida os valores 
 export const FRASES: Frase[]= [
-    {FraseEng : "I LIKE TO LEARN", FrasePTbr:'Eu gosto de aprender'},
-    {FraseEng : "I WATCH TV ", FrasePTbr:'Eu assisto TV'},
-    {FraseEng : "HOW ARE YOU?", FrasePTbr:'Como você está?'},
-    {FraseEng : "I EAT BREAD", FrasePTbr:'Eu como pão'}
-    // esta const joga todos os atributos da classe Frase dentro de um vetor e permite atribuir valores a eles
+    {FraseEng : "I LIKE TO LEARN", FrasePTbr:'EU GOSTO DE APRENDER'},
+    {FraseEng : "I WATCH TV ", FrasePTbr:'EU ASSISTO TV'},
+    {FraseEng : "I LIKE CHICKEN", FrasePTbr:'EU GOSTO DE FRANGO'},
+    {FraseEng : "I EAT BREAD", FrasePTbr:'EU COMO PÃO'}   
 ]
